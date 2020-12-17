@@ -14,7 +14,7 @@ func main() {
 }
 
 func add() {
-	robotgo.EventHook(hook.KeyDown, []string{"alt", "1"}, func(e hook.Event) {
+	robotgo.EventHook(hook.KeyDown, []string{"z", "1"}, func(e hook.Event) {
 		x, y := robotgo.GetMousePos()
 		color := robotgo.GetPixelColor(x, y)
 		fmt.Printf(`{ X: %d, Y: %d, Color: "%s" },`+"\n", x, y, color)
@@ -34,7 +34,7 @@ func low() {
 }
 
 func event() {
-	if robotgo.AddEvents("alt", "1") {
+	if robotgo.AddEvents("z", "1") {
 		fmt.Println("you press... ", "k")
 	}
 }

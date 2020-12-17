@@ -46,21 +46,21 @@ func (h *Hero) LeftClick(x, y int, interval time.Duration) {
 
 func (h *Hero) Refresh() {
 	refreshPoint := Point{
-		X: 0,
-		Y: 0,
+		X: 757,
+		Y: 477,
 	}
 	confirmPoint := Point{
-		X: 0,
-		Y: 0,
+		X: 552,
+		Y: 471,
 	}
 	// 刷新
-	h.LeftClick(refreshPoint.X, refreshPoint.Y, time.Millisecond*200)
+	h.LeftClick(refreshPoint.X, refreshPoint.Y, time.Millisecond*250)
 
 	// 确认
-	h.LeftClick(confirmPoint.X, confirmPoint.Y, time.Millisecond*200)
+	h.LeftClick(confirmPoint.X, confirmPoint.Y, time.Millisecond*250)
 
 	// 刷新
-	h.LeftClick(refreshPoint.X, refreshPoint.Y, time.Millisecond*200)
+	h.LeftClick(refreshPoint.X, refreshPoint.Y, time.Millisecond*250)
 }
 
 func (h *Hero) Check() bool {
@@ -91,7 +91,9 @@ func (h *Hero) Check() bool {
 func main() {
 	// 夏+暴击伤害
 	name := []Point{
-
+		{X: 702, Y: 328, Color: "a0a145"},
+		{X: 702, Y: 329, Color: "d3d751"},
+		{X: 702, Y: 332, Color: "534f33"},
 	}
 	attr := []Point{
 
